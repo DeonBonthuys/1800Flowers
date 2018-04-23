@@ -7,6 +7,8 @@ import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
+import com.flowers.test.services.TestService;
+
 @SpringBootApplication
 public class Application 
 {
@@ -20,9 +22,9 @@ public class Application
 	}
 
 	@Bean
-	public CommandLineRunner init(RestTemplate restTemplate, TestController controller) throws Exception {
+	public CommandLineRunner init(RestTemplate restTemplate, TestService tService) throws Exception {
 		return args -> {
-			controller.posts = restTemplate.getForObject("http://jsonplaceholder.typicode.com/posts", Post[].class);
+			tService.populate(restTemplate.getForObject("http://jsonplaceholder.typicode.com/posts", Post[].class));
 		};
 	}
 }

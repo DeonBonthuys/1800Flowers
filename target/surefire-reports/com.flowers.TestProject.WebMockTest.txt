@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.flowers.TestProject.AppTest
+Test set: com.flowers.TestProject.WebMockTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.914 s - in com.flowers.TestProject.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.271 s - in com.flowers.TestProject.WebMockTest

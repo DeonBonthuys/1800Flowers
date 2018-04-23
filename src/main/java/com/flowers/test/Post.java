@@ -13,6 +13,21 @@ public class Post {
     public Post() {
     }
 
+	/**
+	 * @param userId
+	 * @param id
+	 * @param title
+	 * @param body
+	 */
+	public Post(Long userId, Long id, String title, String body)
+	{
+		super();
+		this.userId = userId;
+		this.id = id;
+		this.title = title;
+		this.body = body;
+	}
+
 	public Long getUserId()
 	{
 		return userId;
